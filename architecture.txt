@@ -1,0 +1,1 @@
+User → Internet → EC2 (Public Subnet) → Web Server (Apache / Nginx)
