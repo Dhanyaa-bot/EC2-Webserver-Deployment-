@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dhanyashree S — Cloud Portfolio</title>
+  <meta name="description" content="Dhanyashree S — Entry-Level Cloud Engineer. AWS (EC2, S3, VPC), Linux, Git. Portfolio & contact." />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#94a3b8; --accent:#06b6d4; --glass: rgba(255,255,255,0.03);
+      --radius:14px; --container:1100px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; margin:0; background:linear-gradient(180deg,#071026 0%, #081126 100%); color:#e6eef8; -webkit-font-smoothing:antialiased;}
+    .wrap{max-width:var(--container); margin:36px auto; padding:28px;}
+    header{display:flex;align-items:center;gap:18px}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#052028;font-size:28px}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:22px;margin-top:28px}
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .chip{background:var(--glass);padding:8px 10px;border-radius:10px;color:var(--muted);font-size:13px}
+    .section-title{font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+    .projects{display:grid;grid-template-columns:1fr;gap:12px}
+    .proj{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:12px;border-radius:10px}
+    .proj h4{margin:0 0 6px}
+    .proj p{margin:0;color:var(--muted);font-size:14px}
+    .cta{display:flex;gap:10px;margin-top:14px}
+    .btn{background:linear-gradient(90deg,var(--accent),#7c3aed);padding:10px 14px;border-radius:10px;color:#001217;text-decoration:none;font-weight:600}
+    .outline{border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--muted);text-decoration:none}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+    .contact-list{display:flex;flex-direction:column;gap:8px}
+    .meta{display:flex;gap:10px;align-items:center}
+    .label{color:var(--muted);font-size:13px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.wrap{padding:18px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">DS</div>
+      <div>
+        <h1>Dhanyashree S — Entry-Level Cloud Engineer</h1>
+        <p class="lead">AWS fundamentals • EC2 • S3 • VPC • Linux • Git • Building cloud infra & deployments</p>
+        <div class="meta" style="margin-top:10px">
+          <div class="label">Mangalore • dhanyashreebalya@gmail.com • +91 9901912979</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <div>
+        <div class="card">
+          <div class="section-title">About</div>
+          <p style="margin:0;color:var(--muted)">I am an aspiring Cloud Engineer with 2+ years of software industry experience as a Web Developer. I have completed AWS Cloud Practitioner training and built sample infrastructure projects to understand real-world cloud operations. I enjoy troubleshooting, optimizing cloud setups, and learning infrastructure design.</p>
+
+          <div style="margin-top:14px">
+            <div class="section-title">Key Skills</div>
+            <div class="skills">
+              <div class="chip">AWS EC2</div>
+              <div class="chip">AWS S3</div>
+              <div class="chip">IAM</div>
+              <div class="chip">VPC</div>
+              <div class="chip">CloudWatch</div>
+              <div class="chip">CloudFront</div>
+              <div class="chip">Linux</div>
+              <div class="chip">Git</div>
+              <div class="chip">Networking</div>
+            </div>
+          </div>
+
+          <div style="margin-top:14px">
+            <div class="section-title">Experience</div>
+            <p style="margin:0;color:var(--muted)"><strong>Web Developer</strong> — Komquest Solutions (Sept 2023 - Present). Worked on front-end projects, deployments, and collaborated on release cycles using Git and Linux servers.</p>
+          </div>
+
+          <div style="margin-top:14px">
+            <div class="section-title">Contact</div>
+            <div class="contact-list">
+              <div class="label">Email: dhanyashreebalya@gmail.com</div>
+              <div class="label">Phone: +91 9901912979</div>
+              <div style="display:flex;gap:8px;margin-top:8px">
+                <a class="btn" href="#projects">View Projects</a>
+                <a class="outline" href="#contact">Contact Me</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card" style="margin-top:14px" id="projects">
+          <div class="section-title">Projects</div>
+          <div class="projects">
+            <div class="proj">
+              <h4>Static Portfolio — S3 + CloudFront</h4>
+              <p>Hosted a static portfolio on S3; configured bucket policy and CloudFront distribution. Enabled HTTPS via AWS Certificate Manager (ACM).</p>
+            </div>
+            <div class="proj">
+              <h4>EC2 Web Server Deployment</h4>
+              <p>Deployed a web application on Amazon EC2 (Amazon Linux 2). Configured security groups, key pairs, and CloudWatch basic monitoring.</p>
+            </div>
+            <div class="proj">
+              <h4>Custom VPC Architecture</h4>
+              <p>Created a VPC with public & private subnets, route tables, NAT, and tested connectivity between instances. Managed IAM roles for secure access.</p>
+            </div>
+          </div>
+
+          <div style="margin-top:12px" class="section-title">Project Links</div>
+          <p style="color:var(--muted);margin:6px 0 0">(Add GitHub links or live demo links here once you deploy. I can help you deploy these to S3 and add demo links.)</p>
+        </div>
+
+      </div>
+
+      <aside>
+        <div class="card">
+          <div class="section-title">Resume</div>
+          <p style="margin:6px 0;color:var(--muted)">Download my resume (PDF)</p>
+          <a class="btn" href="#" onclick="alert('Replace this link with your PDF link after uploading to S3')">Download Resume</a>
+
+          <div style="margin-top:14px">
+            <div class="section-title">Quick Contact</div>
+            <div class="label">Email: dhanyashreebalya@gmail.com</div>
+            <div class="label">Phone: +91 9901912979</div>
+            <div style="margin-top:12px">
+              <a class="outline" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+              <a class="outline" style="margin-left:8px" href="https://github.com/" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="section-title">Availability</div>
+          <p style="margin:0;color:var(--muted)">Actively looking for entry-level Cloud Engineer roles. Open to remote and relocation options.</p>
+        </div>
+
+      </aside>
+
+    </div>
+
+    <footer>
+      <div>© Dhanyashree S • Cloud Portfolio • Built for hiring & interviews</div>
+    </footer>
+  </div>
+</body>
+</html>
