@@ -28,4 +28,4 @@
 - echo "Welcome to My EC2 Website!" > index.html<br>
 
 <br>
-http://<EC2-public-ip>
+http://EC2-public-ip
